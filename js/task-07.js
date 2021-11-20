@@ -3,7 +3,7 @@ const refs = {
     text: document.querySelector('#text')
 }
 
-refs.fontSizeControl.addEventListener('change', onFontSizeControl)
+refs.fontSizeControl.addEventListener('mousemove', onFontSizeControl)
 
 function onFontSizeControl(event) {
     refs.text.style.fontSize = event.currentTarget.value + 'px'
